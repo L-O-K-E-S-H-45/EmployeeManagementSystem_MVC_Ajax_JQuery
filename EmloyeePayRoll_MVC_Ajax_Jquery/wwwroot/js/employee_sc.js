@@ -23,7 +23,7 @@ function ShowEmployees() {
                 object += '<td>' + item.gender + '</td>'
                 object += '<td>' + item.department + '</td>'
                 object += '<td>' + item.salary + '</td>'
-                object += '<td>' + item.hireDate + '</td>'
+                object += '<td>' + new Date(item.hireDate).toLocaleDateString('en-US') + '</td>'
                 object += '<td><a href="#" class="btn btn-primary" onclick="Edit(' + item.employeeId +')">Edit</a> || <a href="#" class="btn btn-danger" onclick="Delete(' + item.employeeId + ')">Delete </a> </td>'
                 object += '</tr>';
             });
@@ -104,6 +104,7 @@ function Delete(employeeId) {
     }
 }
 
+
 function Edit(employeeId) {
     debugger
     $.ajax({
@@ -135,7 +136,6 @@ function Edit(employeeId) {
         }
     })
 }
-
 
 function UpdateEmployee() { debugger
     var objData = {

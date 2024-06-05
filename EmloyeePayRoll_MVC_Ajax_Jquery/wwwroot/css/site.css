@@ -15,4 +15,82 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color:antiquewhite;
+}
+
+
+/*-------------------------------*/
+
+.table{
+    border:solid 2px black;
+}
+
+thead{
+    font-size:20px;
+    font-weight:bold;
+    background-color:darkslateblue;
+    color:white;
+}
+
+tbody{
+    font-size:18px;
+    font-weight:bold;
+    background-color:aliceblue;
+}
+
+#opeation-header{
+    width:200px;
+}
+
+.btn{
+    font-size:20px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+#btnAddEmployee{
+    font-size:21px;
+    font-weight:bold;
+    color:crimson;
+    background-color:aquamarine;
+    border-radius:10px;
+    padding:5px 20px;
+    margin-bottom:20px;
+}
+
+.modal-content {
+    background-color: darkslategrey;
+    padding: 20px;
+}
+
+#EmployeeHeading{
+    font-weight:bold;
+}
+
+.form-group input {
+    height: 50px;
+    border-radius: 10px;
+    background-color:whitesmoke ;
+    color:black;
+    font-size:19px;
+    font-weight:bold;
+    letter-spacing:1px;
+}
+
+.modal-footer .btn{
+    font-size:20px;
+    margin-left:30px;
+    border-radius:5px;
+    width:100px;
+}
+
+#HireDate {
+    color: darkgrey;
+}
+
+label{
+    font-size:20px;
+    font-weight:800;
+    color:whitesmoke;
+    letter-spacing:1px; 
 }

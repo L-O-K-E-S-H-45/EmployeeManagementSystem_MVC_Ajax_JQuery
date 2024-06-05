@@ -6,7 +6,7 @@
 
 @* <h1>Index employee </h1> *@
 
-<button class="btn btn-sm btn-primary m-2 " id="btnAddEmployee">Add Employee</button>
+<button class="btn btn-sm btn-primary m-2 " id="btnAddEmployee">Add Employee</button> <br/>
 
 <table class="table table-bordered" style="width:100%;">
     <thead>
@@ -18,8 +18,8 @@
             <th>Gender</th>
             <th>Department</th>
             <th>Salary</th>
-            <th>HireDate</th>
-            <th>Operations</th>
+            <th id="hiredate-header">HireDate</th>
+            <th id="opeation-header">Operations</th>
         </tr>
     </thead>
     <tbody class="text-center" id="table_data"></tbody>
@@ -36,11 +36,11 @@
             <div class="modal-body">
             <form method="post">
                 <div class="form-group mt-4 " id="empId">
-                    <label>EmployeeId</label>
+                    @* <label>EmployeeId</label> *@
                     <input type="number" class="form-control" id="EmployeeId" disabled="disabled" />
                 </div>
                 <div class="form-group mt-4 ">
-                    <label>EmployeeName</label>
+                    @* <label>EmployeeName</label> *@
                     <input type="text" placeholder="Enter Name" class="form-control" id="EmployeeName" @* autocomplete="off" *@ />
                 </div>
                 <div class="form-group mt-4">
@@ -64,7 +64,7 @@
                     <input type="number" placeholder="Salary" class="form-control" id="Salary" @* autocomplete="off" *@ />
                 </div>
                 <div class="form-group mt-4">
-                    @* <label>Hiredate</label> *@
+                    <label>Hiredate</label>
                     <input type="date" placeholder="HireDate" class="form-control" id="HireDate" @* autocomplete="off" *@ />
                 </div>
             </form>
@@ -77,19 +77,6 @@
         </div>
     </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
