@@ -26,34 +26,37 @@ body {
 }
 
 thead{
-    font-size:20px;
+    font-size:18px;
     font-weight:bold;
     background-color:darkslateblue;
     color:white;
 }
 
 tbody{
-    font-size:18px;
+    font-size:15px;
     font-weight:bold;
     background-color:aliceblue;
 }
 
-#opeation-header{
-    width:200px;
+#opeation-header {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .btn{
-    font-size:20px;
+    font-size:17px;
     font-weight:bold;
     letter-spacing:1px;
 }
 
 #btnAddEmployee{
-    font-size:21px;
+    font-size:19px;
     font-weight:bold;
     color:crimson;
     background-color:aquamarine;
-    border-radius:10px;
+    border-radius:5px;
     padding:5px 20px;
     margin-bottom:20px;
 }
@@ -72,7 +75,7 @@ tbody{
     border-radius: 10px;
     background-color:whitesmoke ;
     color:black;
-    font-size:19px;
+    font-size:17px;
     font-weight:bold;
     letter-spacing:1px;
 }
@@ -93,4 +96,10 @@ label{
     font-weight:800;
     color:whitesmoke;
     letter-spacing:1px;     
+}
+
+#edit-delete-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

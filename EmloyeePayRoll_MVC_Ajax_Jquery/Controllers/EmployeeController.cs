@@ -16,7 +16,7 @@ namespace EmloyeePayRoll_MVC_Ajax_Jquery.Controllers
             return View();
         }
 
-        [HttpGet]
+        //[HttpGet]
         public JsonResult GeAllEmployees()
         {
             List<Employee> employees = contex.Employees.ToList();
@@ -30,18 +30,18 @@ namespace EmloyeePayRoll_MVC_Ajax_Jquery.Controllers
         [HttpPost]
         public JsonResult AddEmployee(Employee employee)
         {
-            Employee employee1 = new Employee()
-            {
-                EmployeeName = employee.EmployeeName,
-                Email = employee.Email,
-                ProfileImage = employee.ProfileImage,
-                Gender = employee.Gender,
-                Department = employee.Department,
-                Salary = employee.Salary,
-                HireDate = employee.HireDate
-            };
+            //Employee employee1 = new Employee()
+            //{
+            //    EmployeeName = employee.EmployeeName,
+            //    Email = employee.Email,
+            //    ProfileImage = employee.ProfileImage,
+            //    Gender = employee.Gender,
+            //    Department = employee.Department,
+            //    Salary = employee.Salary,
+            //    HireDate = employee.HireDate
+            //};
 
-            contex.Employees.Add(employee1);
+            contex.Employees.Add(employee);
             contex.SaveChanges();
             return Json(contex.Employees);
         }

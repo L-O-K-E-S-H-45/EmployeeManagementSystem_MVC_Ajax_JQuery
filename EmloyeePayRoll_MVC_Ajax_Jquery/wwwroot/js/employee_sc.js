@@ -6,7 +6,7 @@ $(document).ready(function () {
 })
 
 function ShowEmployees() {
-    debugger
+    //debugger
     $.ajax({
         url: '/Employee/GeAllEmployees',
         type: 'Get',
@@ -24,7 +24,7 @@ function ShowEmployees() {
                 object += '<td>' + item.department + '</td>'
                 object += '<td>' + item.salary + '</td>'
                 object += '<td>' + new Date(item.hireDate).toLocaleDateString('en-US') + '</td>'
-                object += '<td><a href="#" class="btn btn-primary" onclick="Edit(' + item.employeeId +')">Edit</a> || <a href="#" class="btn btn-danger" onclick="Delete(' + item.employeeId + ')">Delete </a> </td>'
+                object += '<td ><a href="#" class="btn btn-primary" onclick="Edit(' + item.employeeId +')">Edit</a> || <a href="#" class="btn btn-danger" onclick="Delete(' + item.employeeId + ')">Delete </a> </td>'
                 object += '</tr>';
             });
             $('#table_data').html(object);
@@ -45,7 +45,7 @@ $('#btnAddEmployee').click(function () {
 })
 
 function AddEmployee() {
-    debugger
+    //debugger
     var objData = {
         employeeName: $('#EmployeeName').val(),
         Email: $('#Email').val(),
@@ -90,7 +90,7 @@ function HideModalPopUp() {
 
 function Delete(employeeId) {
     debugger
-    if (confirm('Are you sure, you want to delte this record')) {
+    if (confirm('Are you sure, you want to delete this record')) {
         $.ajax({
             url: '/Employee/Delete?employeeId=' + employeeId,
             success: function () {
@@ -103,7 +103,6 @@ function Delete(employeeId) {
         })
     }
 }
-
 
 function Edit(employeeId) {
     debugger
